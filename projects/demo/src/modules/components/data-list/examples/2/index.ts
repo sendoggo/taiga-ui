@@ -9,7 +9,12 @@ import {encapsulation} from '../../../../../view-encapsulation';
     encapsulation,
 })
 export class TuiDataListExample2 {
-    readonly burgers = ['Classic', 'Cheeseburger', 'Royal Cheeseburger'];
+    dropdownOpened = false;
 
+    readonly burgers = ['Classic', 'Cheeseburger', 'Royal Cheeseburger'];
     readonly drinks = ['Cola', 'Tea', 'Coffee', 'Slurm'];
+
+    closeDropdown() {
+        this.dropdownOpened = false;
+    }
 }
